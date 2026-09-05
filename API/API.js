@@ -1,32 +1,23 @@
+export const API_login = 'https://e-commerce-simple-backend.onrender.com/login';
 
-export const API_login ='http://localhost:3000/login' ;
+export const API_ajouterProduits = 'https://e-commerce-simple-backend.onrender.com/ajouterProduits';
 
+export const API_displayProduits = 'https://e-commerce-simple-backend.onrender.com/displayProduits';
 
+export const API_deleteProduits = 'https://e-commerce-simple-backend.onrender.com/deleteProduits';
 
+export const API_modifierProduits = 'https://e-commerce-simple-backend.onrender.com/modifierProduits';
 
-export const API_ajouterProduits ='http://localhost:3000/ajouterProduits' ;
+export const API_modifierImage = 'https://e-commerce-simple-backend.onrender.com/modifierImage';
 
-export const API_displayProduits ='http://localhost:3000/displayProduits' ;
+export const API_commenderProduits = 'https://e-commerce-simple-backend.onrender.com/commenderProduits';
 
-export const API_deleteProduits ='http://localhost:3000/deleteProduits' ;
+export const API_displayCommandeClients = 'https://e-commerce-simple-backend.onrender.com/displayCommandeClients';
 
-export const API_modifierProduits ='http://localhost:3000/modifierProduits' ;
+export const API_deleteCommandeClients = 'https://e-commerce-simple-backend.onrender.com/deleteCommandeClients';
 
-export const API_modifierImage ='http://localhost:3000/modifierImage' ;
+export const API_validerCommandeClients = 'https://e-commerce-simple-backend.onrender.com/validerCommandeClients';
 
+export const API_displayCommandeValider = 'https://e-commerce-simple-backend.onrender.com/displayCommandeValider';
 
-
-
-export const API_commenderProduits ='http://localhost:3000/commenderProduits' ;
-
-export const API_displayCommandeClients ='http://localhost:3000/displayCommandeClients' ;
-
-export const API_deleteCommandeClients ='http://localhost:3000/deleteCommandeClients' ;
-
-export const API_validerCommandeClients ='http://localhost:3000/validerCommandeClients' ;
-
-export const API_displayCommandeValider ='http://localhost:3000/displayCommandeValider' ;
-
-export const API_deleteCommandeValider ='http://localhost:3000/deleteCommandeValider' ;
-
-
+export const API_deleteCommandeValider = 'https://e-commerce-simple-backend.onrender.com/deleteCommandeValider';
