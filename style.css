@@ -1,0 +1,297 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f8fb;
+    color: #1f2937;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 14px 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+header nav {
+    display: flex;
+    gap: 10px !important;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   BOUTONS NAVIGATION
+========================================= */
+
+header nav button {
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    color: #374151;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* Survol */
+
+header nav button:hover {
+    background: #f3f6fa;
+    border-color: #d1d5db;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+
+/* Clic */
+
+header nav button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+
+/* Focus clavier */
+
+header nav button:focus-visible {
+    outline: 3px solid rgba(59, 130, 246, 0.2);
+    outline-offset: 2px;
+}
+
+
+/* =========================================
+   CONTENEURS PRINCIPAUX
+========================================= */
+
+#templateClients,
+#templateAuth,
+#templatePublication {
+    width: min(1200px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* =========================================
+   ESPACEMENT
+========================================= */
+
+#templateClients {
+    margin-top: 20px;
+}
+
+#templateAuth {
+    margin-top: 20px;
+}
+
+#templatePublication {
+    margin-top: 20px;
+}
+
+
+/* =========================================
+   STYLE DES ÉLÉMENTS FLATICON
+========================================= */
+
+/*
+   Si tu utilises par exemple :
+
+   <i class="fi fi-rr-home"></i>
+
+   ou une autre classe Flaticon,
+   ces règles peuvent améliorer leur affichage.
+*/
+
+[class^="fi-"],
+[class*=" fi-"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 1;
+}
+
+
+/* Icône dans un bouton */
+
+button [class^="fi-"],
+button [class*=" fi-"] {
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+
+/* =========================================
+   IMAGES RESPONSIVES
+========================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =========================================
+   TABLETTES
+========================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 12px 15px;
+    }
+
+    header nav {
+        gap: 8px !important;
+    }
+
+    header nav button {
+        padding: 9px 14px;
+        font-size: 13px;
+    }
+
+    #templateClients,
+    #templateAuth,
+    #templatePublication {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+/* =========================================
+   SMARTPHONES
+========================================= */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 10px;
+    }
+
+
+    /* Navigation verticale */
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        gap: 8px !important;
+    }
+
+
+    /* Boutons prennent toute la largeur */
+
+    header nav button {
+        width: 100%;
+
+        min-height: 44px;
+
+        padding: 11px 14px;
+
+        font-size: 14px;
+
+        text-align: center;
+    }
+
+
+    #templateClients,
+    #templateAuth,
+    #templatePublication {
+        width: 100%;
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    #templateClients,
+    #templateAuth,
+    #templatePublication {
+        margin-top: 15px;
+    }
+}
+
+
+/* =========================================
+   TRÈS PETITS ÉCRANS
+========================================= */
+
+@media (max-width: 350px) {
+
+    header {
+        padding: 8px;
+    }
+
+    header nav button {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    #templateClients,
+    #templateAuth,
+    #templatePublication {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+
+/* =========================================
+   ACCESSIBILITÉ
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    * {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}

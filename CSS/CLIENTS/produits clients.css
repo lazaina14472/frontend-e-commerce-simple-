@@ -1,0 +1,606 @@
+/* =====================================================
+   PRODUITS CLIENTS
+===================================================== */
+
+#liste_produitsClients {
+
+    margin: 5%;
+
+    gap: 25px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+
+/* =====================================================
+   CARD PRODUIT
+===================================================== */
+
+.article-produitsClients {
+
+    width: 200px;
+
+    text-align: center;
+
+    margin: 2%;
+
+    padding: 15px;
+
+    background-color: white;
+
+    box-sizing: border-box;
+
+    border: none;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+/* SCALE UP */
+
+.article-produitsClients:hover {
+
+    transform: scale(1.05);
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.18);
+
+}
+
+
+/* =====================================================
+   IMAGE PRODUIT
+===================================================== */
+
+.imgProduits-clients {
+
+    width: 100%;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+}
+
+
+/* =====================================================
+   NOM PRODUIT
+===================================================== */
+
+.article-produitsClients h3 {
+
+    margin: 12px 0;
+
+    color: #222;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+/* =====================================================
+   DETAILS PRODUIT
+===================================================== */
+
+.article-produitsClients p {
+
+    margin: 10px 0;
+
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+/* =====================================================
+   BOUTON AJOUTER
+===================================================== */
+
+.article-produitsClients button {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+}
+
+
+.article-produitsClients button:hover {
+
+    background-color: #1d4ed8;
+
+    transform: scale(1.03);
+
+}
+
+
+/* =====================================================
+   BOUTON PANIER
+===================================================== */
+
+#btnDisplayPanier {
+
+    position: fixed;
+
+    right: 20px;
+
+    top: 8px;
+
+    z-index: 9999;
+
+    padding: 10px 16px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* =====================================================
+   CONTENEUR PANIER
+===================================================== */
+
+#conteneur_panier {
+
+    display: none;
+
+    position: fixed;
+
+    right: 20px;
+
+    top: 40px;
+
+    z-index: 9999;
+
+    width: 400px;
+
+    max-width: calc(100% - 30px);
+
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    background-color: rgb(209, 205, 205);
+
+    border: none;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.20);
+
+}
+
+
+/* =====================================================
+   PRODUITS DU PANIER
+===================================================== */
+
+.produits-panier {
+
+    padding: 12px;
+
+    margin: 10px 0;
+
+    text-align: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+    background-color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* =====================================================
+   IMAGE DU PANIER
+===================================================== */
+
+.imageProduits_clients {
+
+    width: 50px;
+
+    height: 50px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+}
+
+
+/* =====================================================
+   TEXTE PANIER
+===================================================== */
+
+.produits-panier p {
+
+    margin: 5px;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+/* =====================================================
+   BOUTONS DU PANIER
+===================================================== */
+
+.produits-panier button {
+
+    min-width: 40px;
+
+    min-height: 38px;
+
+    padding: 8px 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+}
+
+
+.produits-panier button:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+/* =====================================================
+   BOUTON SUPPRIMER
+===================================================== */
+
+.produits-panier button:first-of-type {
+
+    background-color: #dc2626;
+
+}
+
+
+/* =====================================================
+   TOTAL GENERAL
+===================================================== */
+
+#total_produitsPanier {
+
+    padding: 12px;
+
+    margin-top: 15px;
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    color: #16a34a;
+
+    text-align: center;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* =====================================================
+   BOUTON CREER COMMANDE
+===================================================== */
+
+#btnCreerCommande {
+
+    width: 100%;
+
+    min-height: 44px;
+
+    margin-top: 10px;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #16a34a;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* =====================================================
+   FORMULAIRE IDENTITE CLIENT
+===================================================== */
+
+#containeur_identiterClients {
+
+    text-align: center;
+
+    display: none;
+
+}
+
+
+/* =====================================================
+   RECHERCHE
+===================================================== */
+
+#inputRechercheProduits {
+
+    width: min(400px, 90%);
+
+    height: 42px;
+
+    padding: 0 12px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    outline: none;
+
+}
+
+
+#inputRechercheProduits:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+
+}
+
+
+/* =====================================================
+   TABLETTE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    #liste_produitsClients {
+
+        margin: 30px 4%;
+
+        gap: 20px;
+
+        grid-template-columns:
+            repeat(auto-fit, minmax(190px, 1fr));
+
+    }
+
+
+    .article-produitsClients {
+
+        width: 190px;
+
+        margin: auto;
+
+    }
+
+
+    #conteneur_panier {
+
+        right: 15px;
+
+        top: 50px;
+
+        width:
+            calc(100% - 30px);
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    #liste_produitsClients {
+
+        margin: 25px 10px;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .article-produitsClients {
+
+        width: min(280px, 100%);
+
+        margin: auto;
+
+        padding: 15px;
+
+    }
+
+
+    .imgProduits-clients {
+
+        height: 180px;
+
+    }
+
+
+    #btnDisplayPanier {
+
+        right: 10px;
+
+        top: 8px;
+
+        padding: 9px 13px;
+
+        font-size: 13px;
+
+    }
+
+
+    #conteneur_panier {
+
+        right: 10px;
+
+        top: 50px;
+
+        width:
+            calc(100% - 20px);
+
+        max-height: 80vh;
+
+        padding: 10px;
+
+    }
+
+
+    .produits-panier {
+
+        gap: 7px;
+
+    }
+
+}
+
+
+/* =====================================================
+   PETIT MOBILE
+===================================================== */
+
+@media (max-width: 350px) {
+
+    .article-produitsClients {
+
+        width: 100%;
+
+        padding: 12px;
+
+    }
+
+
+    .imgProduits-clients {
+
+        height: 150px;
+
+    }
+
+
+    #conteneur_panier {
+
+        right: 5px;
+
+        width:
+            calc(100% - 10px);
+
+    }
+
+
+    .produits-panier {
+
+        flex-direction: column;
+
+    }
+
+
+    .imageProduits_clients {
+
+        width: 60px;
+
+        height: 60px;
+
+    }
+
+}

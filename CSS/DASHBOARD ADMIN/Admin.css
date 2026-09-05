@@ -1,0 +1,204 @@
+
+#conteneur_listeCommande {
+
+    display: none;
+    
+}
+
+
+/* PRODUITS  */
+
+/* CONTENEUR DES COMMANDES */
+
+#listeCommande {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+
+/* CARD CLIENT */
+
+#listeCommande > div {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+/* EFFET AU SURVOL */
+
+#listeCommande > div:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* INFORMATIONS CLIENT */
+
+#listeCommande > div > h3:first-child {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    font-size: 20px;
+}
+
+#listeCommande > div > p {
+    margin: 8px 0;
+
+    color: #555;
+}
+
+
+/* TITRE PRODUITS */
+
+#listeCommande > div > h3 {
+    margin-top: 20px;
+    padding-top: 15px;
+
+    border-top: 1px solid #eee;
+
+    font-size: 17px;
+}
+
+
+/* CARD PRODUIT */
+
+#listeCommande > div > div {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 12px;
+    padding: 12px;
+
+    background: #f8f9fa;
+
+    border-radius: 12px;
+
+    border: 1px solid #eee;
+}
+
+
+/* IMAGE PRODUIT */
+
+#listeCommande > div > div img {
+    width: 75px;
+    height: 75px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* NOM PRODUIT */
+
+#listeCommande > div > div h4 {
+    margin: 0 0 5px 0;
+
+    font-size: 16px;
+}
+
+
+/* INFORMATIONS PRODUIT */
+
+#listeCommande > div > div p {
+    margin: 3px 0;
+
+    font-size: 14px;
+
+    color: #666;
+}
+
+
+/* TOTAL */
+
+#listeCommande > div > h3:last-child {
+    margin-top: 20px;
+    padding-top: 15px;
+
+    border-top: 2px solid #eee;
+
+    text-align: right;
+
+    font-size: 18px;
+}
+
+
+
+#listeCommandeValider {
+
+    gap: 2%;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(200px ,1fr));
+
+}
+
+
+.div-commandeValider {
+    width: 100%;
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 20px;
+
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+.div-commandeValider h3 {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+
+    word-break: break-word;
+}
+
+
+/* 📱 Téléphone */
+@media (max-width: 600px) {
+
+    .div-commandeValider {
+        width: calc(100% - 20px);
+        margin: 10px auto;
+        padding: 15px;
+
+        border-radius: 10px;
+    }
+
+    .div-commandeValider h3 {
+        font-size: 15px;
+        margin: 6px 0;
+    }
+}
+
+
+/* 📱 Très petit écran */
+@media (max-width: 350px) {
+
+    .div-commandeValider {
+        width: calc(100% - 12px);
+        padding: 12px;
+    }
+
+    .div-commandeValider h3 {
+        font-size: 14px;
+    }
+}
+

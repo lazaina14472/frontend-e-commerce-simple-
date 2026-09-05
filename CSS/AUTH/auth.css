@@ -1,0 +1,196 @@
+.auth-login {
+    text-align: center;
+}
+
+#templateAuth {
+    display: none;
+}
+
+/* FORMULAIRE */
+.auth-login {
+    width: min(420px, calc(100% - 30px));
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* TITRE */
+.auth-login h2 {
+    margin: 0 0 25px 0;
+    color: #1f2937;
+    font-size: 24px;
+}
+
+/* INPUT NOM */
+.auth-login > input {
+    width: 100%;
+    height: 46px;
+    padding: 0 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.auth-login > input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* CONTENEUR PASSWORD */
+.conteneur-password {
+    width: 100%;
+    height: 46px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* INPUT PASSWORD */
+.conteneur-password input {
+    width: 100%;
+    height: 46px;
+    padding: 0 65px 0 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.conteneur-password input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* BOUTON SHOW */
+#btnTogglePasswordAdmin {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 36px;
+    min-width: 55px;
+    padding: 0 8px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#btnTogglePasswordAdmin:hover {
+    background: #f3f4f6;
+}
+
+/* BOUTON CONNEXION */
+#btnSeConnecter {
+    width: 100%;
+    height: 46px;
+
+    /* ESPACE ENTRE PASSWORD ET CONNEXION */
+    margin-top: 15px;
+
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#btnSeConnecter:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* MESSAGE */
+#messageAuthAdmin {
+    margin-top: 15px;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+/* RESPONSIVE TABLETTE */
+@media (max-width: 768px) {
+
+    .auth-login {
+        width: calc(100% - 30px);
+        margin: 30px auto;
+        padding: 25px;
+    }
+
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 480px) {
+
+    .auth-login {
+        width: calc(100% - 20px);
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .auth-login h2 {
+        font-size: 21px;
+    }
+
+    .auth-login > input {
+        height: 45px;
+    }
+
+    .conteneur-password {
+        height: 45px;
+    }
+
+    .conteneur-password input {
+        height: 45px;
+        padding-right: 62px;
+    }
+
+    #btnTogglePasswordAdmin {
+        right: 4px;
+        height: 34px;
+        min-width: 52px;
+        font-size: 12px;
+    }
+
+    #btnSeConnecter {
+        height: 45px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+}
+
+/* PETIT MOBILE */
+@media (max-width: 350px) {
+
+    .auth-login {
+        width: calc(100% - 14px);
+        padding: 16px;
+    }
+
+    .conteneur-password input {
+        font-size: 13px;
+        padding-right: 58px;
+    }
+
+    #btnTogglePasswordAdmin {
+        min-width: 48px;
+        font-size: 11px;
+    }
+
+    #btnSeConnecter {
+        margin-top: 15px;
+    }
+
+}

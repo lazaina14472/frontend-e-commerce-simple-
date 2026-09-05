@@ -1,0 +1,383 @@
+
+#templatePublication {
+    display: none;
+}
+
+
+#btn_navPublier {
+    display: none;
+}
+
+
+#listeProduitsAdmin {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px ,1fr));
+    margin: 4%;
+}
+
+
+.imgProduits-clients {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.article-produitsAdmin {
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    border: solid 2px black;
+    margin: 2%;
+    padding: 2%;
+}
+
+
+#conteneur_modifierProduits {
+    display: none;
+}
+
+
+#btnSeDeConnecter {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+/* =====================================================
+   LISTE DES PRODUITS ADMIN
+===================================================== */
+
+#listeProduitsAdmin {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 25px;
+
+    margin: 4%;
+
+    align-items: start;
+
+}
+
+
+/* =====================================================
+   CARTE PRODUIT ADMIN
+===================================================== */
+
+.article-produitsAdmin {
+
+    width: 200px;
+
+    margin: 2%;
+
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background-color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+/* =====================================================
+   EFFET SURVOL CARTE
+===================================================== */
+
+.article-produitsAdmin:hover {
+
+    transform: scale(1.05);
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.16);
+
+}
+
+
+/* =====================================================
+   IMAGE PRODUIT
+===================================================== */
+
+.article-produitsAdmin .imgProduits-clients {
+
+    width: 100%;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 10px;
+
+}
+
+
+/* =====================================================
+   NOM DU PRODUIT
+===================================================== */
+
+.article-produitsAdmin h3 {
+
+    margin: 12px 0;
+
+    color: #1f2937;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+/* =====================================================
+   DETAILS DU PRODUIT
+===================================================== */
+
+.article-produitsAdmin p {
+
+    margin: 10px 0;
+
+    color: #4b5563;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+/* =====================================================
+   PRIX DU PRODUIT
+===================================================== */
+
+.article-produitsAdmin h3:last-of-type {
+
+    color: #4ade80;
+
+}
+
+
+/* =====================================================
+   BOUTONS PRODUITS
+===================================================== */
+
+.btn-deleteProduits,
+
+.btn-modifierProduits {
+
+    min-height: 40px;
+
+    margin: 5px;
+
+    padding: 9px 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+
+}
+
+
+/* =====================================================
+   BOUTON SUPPRIMER
+===================================================== */
+
+.btn-deleteProduits {
+
+    background-color: #e81414;
+
+}
+
+
+.btn-deleteProduits:hover {
+
+    background-color: #e34949;
+
+    transform: scale(1.05);
+
+}
+
+
+/* =====================================================
+   BOUTON MODIFIER
+===================================================== */
+
+.btn-modifierProduits {
+
+    background-color: #0b77f3;
+
+}
+
+
+.btn-modifierProduits:hover {
+
+    background-color: #60a5fa;
+
+    transform: scale(1.05);
+
+}
+
+
+/* =====================================================
+   TABLETTE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    #listeProduitsAdmin {
+
+        grid-template-columns:
+            repeat(auto-fit, minmax(180px, 1fr));
+
+        gap: 20px;
+
+        margin: 30px 4%;
+
+    }
+
+
+    .article-produitsAdmin {
+
+        width: 180px;
+
+        margin: auto;
+
+        padding: 13px;
+
+    }
+
+
+    .article-produitsAdmin .imgProduits-clients {
+
+        height: 140px;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    #listeProduitsAdmin {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        margin: 25px 10px;
+
+    }
+
+
+    .article-produitsAdmin {
+
+        width: min(280px, 100%);
+
+        margin: auto;
+
+        padding: 15px;
+
+    }
+
+
+    .article-produitsAdmin .imgProduits-clients {
+
+        height: 180px;
+
+    }
+
+
+    .btn-deleteProduits,
+
+    .btn-modifierProduits {
+
+        width: calc(50% - 12px);
+
+        min-height: 40px;
+
+        margin: 5px;
+
+        padding: 9px 6px;
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/* =====================================================
+   PETIT MOBILE
+===================================================== */
+
+@media (max-width: 350px) {
+
+    #listeProduitsAdmin {
+
+        grid-template-columns: 1fr;
+
+        margin: 20px 8px;
+
+    }
+
+
+    .article-produitsAdmin {
+
+        width: 100%;
+
+        padding: 12px;
+
+    }
+
+
+    .article-produitsAdmin .imgProduits-clients {
+
+        height: 150px;
+
+    }
+
+
+    .btn-deleteProduits,
+
+    .btn-modifierProduits {
+
+        width: 100%;
+
+        margin: 5px 0;
+
+    }
+
+}

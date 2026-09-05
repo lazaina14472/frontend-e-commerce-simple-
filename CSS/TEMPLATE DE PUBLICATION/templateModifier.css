@@ -1,0 +1,404 @@
+/* =====================================================
+   FORMULAIRE MODIFICATION PRODUIT
+===================================================== */
+
+#conteneur_modifierProduits {
+
+    display: none;
+
+    width: min(500px, 94%);
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    background-color: white;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* =====================================================
+   TITRE
+===================================================== */
+
+#conteneur_modifierProduits h2 {
+
+    margin: 0 0 25px 0;
+
+    text-align: center;
+
+    color: #1f2937;
+
+    font-size: 22px;
+
+}
+
+
+/* =====================================================
+   LABELS
+===================================================== */
+
+#conteneur_modifierProduits label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #374151;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+
+/* =====================================================
+   INPUTS TEXTE
+===================================================== */
+
+#conteneur_modifierProduits input[type="text"] {
+
+    width: 100%;
+
+    height: 44px;
+
+    padding: 0 13px;
+
+    box-sizing: border-box;
+
+    border: none;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background-color: #f3f4f6;
+
+    color: #1f2937;
+
+    font-size: 14px;
+
+    box-shadow:
+        inset 0 0 0 1px #e5e7eb;
+
+    transition:
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+
+}
+
+
+/* =====================================================
+   FOCUS INPUT
+===================================================== */
+
+#conteneur_modifierProduits input[type="text"]:focus {
+
+    background-color: white;
+
+    box-shadow:
+        inset 0 0 0 2px #93c5fd;
+
+}
+
+
+/* =====================================================
+   INPUT IMAGE
+===================================================== */
+
+#conteneur_modifierProduits input[type="file"] {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    margin-bottom: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #f3f4f6;
+
+    color: #4b5563;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+}
+
+
+/* =====================================================
+   BOUTON MODIFIER IMAGE
+===================================================== */
+
+#btnModifierImage {
+
+    min-height: 42px;
+
+    padding: 10px 16px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #c4b5fd;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+
+}
+
+
+#btnModifierImage:hover {
+
+    background-color: #a78bfa;
+
+    transform: scale(1.03);
+
+}
+
+
+/* =====================================================
+   BOUTON ENREGISTRER MODIFICATION
+===================================================== */
+
+#btnEnregistrer_ModificationProduits {
+
+    width: 100%;
+
+    min-height: 44px;
+
+    margin-top: 10px;
+
+    padding: 10px 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #86efac;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+
+}
+
+
+#btnEnregistrer_ModificationProduits:hover {
+
+    background-color: #4ade80;
+
+    transform: scale(1.02);
+
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+#message_ModificationProduits {
+
+    margin: 15px 0 0 0;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+/* =====================================================
+   TABLETTE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    #conteneur_modifierProduits {
+
+        width: 90%;
+
+        margin: 30px auto;
+
+        padding: 25px;
+
+    }
+
+
+    #conteneur_modifierProduits h2 {
+
+        font-size: 20px;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    #conteneur_modifierProduits {
+
+        width: calc(100% - 20px);
+
+        margin: 25px auto;
+
+        padding: 20px;
+
+        border-radius: 12px;
+
+    }
+
+
+    #conteneur_modifierProduits h2 {
+
+        font-size: 19px;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    #conteneur_modifierProduits label {
+
+        font-size: 13px;
+
+    }
+
+
+    #conteneur_modifierProduits input[type="text"] {
+
+        height: 42px;
+
+        font-size: 14px;
+
+    }
+
+
+    #conteneur_modifierProduits input[type="file"] {
+
+        font-size: 12px;
+
+        padding: 9px;
+
+    }
+
+
+    #btnModifierImage {
+
+        width: 100%;
+
+    }
+
+
+    #btnEnregistrer_ModificationProduits {
+
+        min-height: 44px;
+
+    }
+
+}
+
+
+/* =====================================================
+   PETIT MOBILE
+===================================================== */
+
+@media (max-width: 350px) {
+
+    #conteneur_modifierProduits {
+
+        width: calc(100% - 16px);
+
+        padding: 16px;
+
+    }
+
+
+    #conteneur_modifierProduits h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    #btnModifierImage,
+
+    #btnEnregistrer_ModificationProduits {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+
+#btnDashboardAdmin {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #c4b5fd;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#btnDashboardAdmin:hover {
+    background-color: #a78bfa;
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    #btnDashboardAdmin {
+        width: 100%;
+        min-height: 44px;
+        font-size: 13px;
+    }
+}
