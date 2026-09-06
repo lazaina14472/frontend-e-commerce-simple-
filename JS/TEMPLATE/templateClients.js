@@ -32,7 +32,7 @@ templateClients.innerHTML =`
   <label for="">Numéro de telephone :</label>
   <input type="text" id="numeroTelephoneClients"><br><br>
 
-  <label for="">Adress de livraison :</label>
+  <label for="">Adresse de livraison :</label>
   <input type="text" id="adresseLivrasionClients"><br><br>
 
   <button id="btnEnvoyerCommande" type="button">Envoyer la commande</button>
