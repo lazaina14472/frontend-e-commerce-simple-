@@ -79,6 +79,16 @@ export async function envoyerCommande() {
 
     }) ;
 
+    
+
+    nomClients.vider() ;
+
+    prenomClients.vider() ;
+
+    numeroTelephoneClients.vider() ;
+
+    adresseLivrasionClients.vider() ;
+    
 
     displayCommande() ;
 
